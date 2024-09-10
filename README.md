@@ -37,13 +37,15 @@ To get started with this project, follow the instructions below:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/your-repository.git
-    cd your-repository
+    https://github.com/Zaim211/Test-React-native-graphQL-redux.git
+    cd test-react-native
     ```
 
 2. **Install Dependencies**:
     ```bash
     npm install
+    npm install -g expo-cli
+    npm install @reduxjs/toolkit react-redux @apollo/client graphql
     ```
 
 3. **Start the Project**:
@@ -71,31 +73,6 @@ To get started with this project, follow the instructions below:
 
 ---
 
-## **Setup** 🛠️
-
-1. **Ensure you have Node.js installed**. Download it from [nodejs.org](https://nodejs.org/).
-
-2. **Install Expo CLI** (if not already installed):
-    ```bash
-    npm install -g expo-cli
-    ```
-
-3. **Create a new Expo project** (if starting from scratch):
-    ```bash
-    expo init post-list-app
-    cd post-list-app
-    ```
-
-4. **Install Dependencies**:
-    ```bash
-    npm install @reduxjs/toolkit react-redux @apollo/client graphql
-    ```
-
-5. **Configure Redux and Apollo Client**:
-   - Set up Redux slices for posts and selected post.
-   - Configure Apollo Client with the GraphQL API endpoint.
-
----
 
 ## **Running the Project** 🚀
 
