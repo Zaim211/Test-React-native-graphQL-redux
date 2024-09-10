@@ -1,50 +1,120 @@
-# Welcome to your Expo app 👋
+# **Post List and Detail Viewer**
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project displays a list of posts with their titles and shows the details of a selected post including the ID and title. The data is fetched from a GraphQL API and managed via Redux.
 
-## Get started
+---
 
-1. Install dependencies
+## **Project Overview**
 
-   ```bash
-   npm install
-   ```
+The application allows users to:
+1. View a list of posts with a limit of 30 items.
+2. Click on a post to view its details (ID and title).
+3. Use Redux for state management to pass parameters between the list and the detail screen.
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+## **API Details**
 
-In the output, you'll find options to open the app in a
+- **Base URL**: [https://graphqlzero.almansi.me/](https://graphqlzero.almansi.me/)
+- **Query**: Get All Posts
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## **Table of Contents** 📚
 
-## Get a fresh project
+- [Quick Start](#quick-start)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Setup](#setup)
+- [Running the Project](#running-the-project)
+- [Screenshots](#screenshots)
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## **Quick Start** 🤸
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+To get started with this project, follow the instructions below:
 
-## Learn more
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/yourusername/your-repository.git
+    cd your-repository
+    ```
 
-To learn more about developing your project with Expo, look at the following resources:
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+3. **Start the Project**:
+    ```bash
+    npm start
+    ```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## **Features** ✨
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **Display Post Titles**: Lists up to 30 posts.
+- **Post Details View**: Shows details (ID and title) of a selected post.
+- **State Management**: Uses Redux to manage and pass data between screens.
+- **GraphQL Integration**: Fetches data using GraphQL queries.
+
+---
+
+## **Tech Stack** 🛠️
+
+- **Frontend**: React Native
+- **State Management**: Redux
+- **API**: GraphQL
+- **Styling**: Custom styles with React Native
+
+---
+
+## **Setup** 🛠️
+
+1. **Ensure you have Node.js installed**. Download it from [nodejs.org](https://nodejs.org/).
+
+2. **Install Expo CLI** (if not already installed):
+    ```bash
+    npm install -g expo-cli
+    ```
+
+3. **Create a new Expo project** (if starting from scratch):
+    ```bash
+    expo init post-list-app
+    cd post-list-app
+    ```
+
+4. **Install Dependencies**:
+    ```bash
+    npm install @reduxjs/toolkit react-redux @apollo/client graphql
+    ```
+
+5. **Configure Redux and Apollo Client**:
+   - Set up Redux slices for posts and selected post.
+   - Configure Apollo Client with the GraphQL API endpoint.
+
+---
+
+## **Running the Project** 🚀
+
+1. **Start the Expo development server**:
+    ```bash
+    npm start
+    ```
+
+2. **Open the Expo app** on your mobile device or emulator and scan the QR code provided by the development server.
+
+3. **Navigate through the app** to view the post list and details.
+
+---
+
+## **Screenshots**
+
+Here are some screenshots of the application:
+
+<img src="https://github.com/yourusername/your-repository/assets/screenshot1.png" alt="Screenshot 1" width="200" style="display:inline-block; margin-right: 20px;">
+<img src="https://github.com/yourusername/your-repository/assets/screenshot2.png" alt="Screenshot 2" width="200" style="display:inline-block; margin-right: 20px;">
+
+---
