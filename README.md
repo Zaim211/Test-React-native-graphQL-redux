@@ -1,97 +1,84 @@
-# **Post List and Detail Viewer**
+# **Affichage des Posts et Détails**
 
-This project displays a list of posts with their titles and shows the details of a selected post including the ID and title. The data is fetched from a GraphQL API and managed via Redux.
-
----
-
-## **Project Overview**
-
-The application allows users to:
-1. View a list of posts with a limit of 30 items.
-2. Click on a post to view its details (ID and title).
-3. Use Redux for state management to pass parameters between the list and the detail screen.
+Ce projet affiche une liste de posts avec leurs titres et montre les détails d'un post sélectionné, y compris l'ID et le titre. Les données sont récupérées via une API GraphQL et gérées via Redux.
 
 ---
 
-## **API Details**
+## **Vue d'Ensemble du Projet**
 
-- **Base URL**: [https://graphqlzero.almansi.me/](https://graphqlzero.almansi.me/)
-- **Query**: Get All Posts
-
----
-
-## **Table of Contents** 📚
-
-- [Quick Start](#quick-start)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Setup](#setup)
-- [Running the Project](#running-the-project)
-- [Screenshots](#screenshots)
+L'application permet aux utilisateurs de :
+1. Voir une liste de posts avec une limite de 30 éléments.
+2. Cliquer sur un post pour voir ses détails (ID et titre).
+3. Utiliser Redux pour la gestion de l'état afin de passer des paramètres entre la liste et l'écran de détail.
 
 ---
 
-## **Quick Start** 🤸
+## **Détails de l'API**
 
-To get started with this project, follow the instructions below:
+- **URL de Base**: [https://graphqlzero.almansi.me/](https://graphqlzero.almansi.me/)
+- **Requête**: Obtenir Tous les Posts
 
-1. **Clone the Repository**:
+---
+
+## **Table des Matières** 📚
+
+- [Démarrage Rapide](#démarrage-rapide)
+- [Fonctionnalités](#fonctionnalités)
+- [Technologies Utilisées](#technologies-utilisées)
+- [Configuration](#configuration)
+- [Exécution du Projet](#exécution-du-projet)
+- [Captures d'Écran](#captures-décran)
+
+---
+
+## **Démarrage Rapide** 🤸
+
+Pour commencer avec ce projet, suivez les instructions ci-dessous :
+
+1. **Cloner le Dépôt** :
     ```bash
-    https://github.com/Zaim211/Test-React-native-graphQL-redux.git
+    git clone https://github.com/Zaim211/Test-React-native-graphQL-redux.git
     cd test-react-native
     ```
 
-2. **Install Dependencies**:
+2. **Installer les Dépendances** :
     ```bash
     npm install
     npm install -g expo-cli
     npm install @reduxjs/toolkit react-redux @apollo/client graphql
     ```
 
-3. **Start the Project**:
+
+
+---
+## **Exécution du Projet** 🚀
+
+1. **Démarrer le serveur de développement Expo** :
     ```bash
     npm start
     ```
 
----
+2. **Ouvrir l'application Expo** sur votre appareil mobile ou émulateur et scanner le code QR fourni par le serveur de développement.
 
-## **Features** ✨
-
-- **Display Post Titles**: Lists up to 30 posts.
-- **Post Details View**: Shows details (ID and title) of a selected post.
-- **State Management**: Uses Redux to manage and pass data between screens.
-- **GraphQL Integration**: Fetches data using GraphQL queries.
+3. **Naviguer dans l'application** pour voir la liste des posts et les détails.
 
 ---
 
-## **Tech Stack** 🛠️
+## **Fonctionnalités** ✨
+
+- **Affichage des Titres des Posts** : Liste jusqu'à 30 posts.
+- **Vue des Détails du Post** : Affiche les détails (ID et titre) d'un post sélectionné.
+- **Gestion de l'État** : Utilise Redux pour gérer et passer les données entre les écrans.
+- **Intégration GraphQL** : Récupère les données en utilisant des requêtes GraphQL.
+
+---
+
+## **Technologies Utilisées** 🛠️
 
 - **Frontend**: React Native
-- **State Management**: Redux
+- **Gestion de l'État**: Redux
 - **API**: GraphQL
-- **Styling**: Custom styles with React Native
+- **Styling**: Styles personnalisés avec React Native
 
 ---
 
-
-## **Running the Project** 🚀
-
-1. **Start the Expo development server**:
-    ```bash
-    npm start
-    ```
-
-2. **Open the Expo app** on your mobile device or emulator and scan the QR code provided by the development server.
-
-3. **Navigate through the app** to view the post list and details.
-
----
-
-## **Screenshots**
-
-Here are some screenshots of the application:
-
-<img src="https://github.com/yourusername/your-repository/assets/screenshot1.png" alt="Screenshot 1" width="200" style="display:inline-block; margin-right: 20px;">
-<img src="https://github.com/yourusername/your-repository/assets/screenshot2.png" alt="Screenshot 2" width="200" style="display:inline-block; margin-right: 20px;">
-
----
